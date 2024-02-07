@@ -1,27 +1,25 @@
-// Dom Manipulation
+// Creating Elements
 
-//STYLING ELEMENTS
-//----------------
-
-
-//==============> "#main-heading" enn id ull div nte color red aakm <===============
-
-    // const title = document.querySelector('#main-heading');
-
-    // title.style.color = 'red'; 
-
-    // console.log(title);
-
-//==============> "#main-heading" enn id ull div nte color red aakm <================
+const ul = document.querySelector('ul');
+const li = document.createElement('li');
 
 
-//==============> ".list-items" enn className ull div nte font size 5rem aakm <================
+// Adding Elements --> ul nte ull new li add aakan, ith aakan vendi aan mukalile code ne shesham ul.append(li) ittath
 
-    // const listItems = document.querySelectorAll('.list-items');
+ul.append(li)
 
-    // for (let i = 0; i < listItems.length; i++) {
-    //     listItems[i].style.fontSize = '5rem';
-        
-    // }
 
-//==============> ".list-items" enn className ull div nte font size 5rem aakm <================
+//Modifying the text
+
+const firstListItem = document.querySelector('.list-items');
+
+// console.log(firstListItem.innerText);
+// console.log(firstListItem.textContent);
+// console.log(firstListItem.innerHTML);
+
+li.innerText = 'X-men'; // li nte ullil "X-men" enn add aakkan
+
+// Modifying Attributes & Classes
+
+li.setAttribute('id', 'main-heading'); // "main-heading" enna id il ulla ella styles um 'X-men' lum varan, --> line no:20 il ullath
+
