@@ -22,4 +22,5 @@ li.innerText = 'X-men'; // li nte ullil "X-men" enn add aakkan
 // Modifying Attributes & Classes
 
 li.setAttribute('id', 'main-heading'); // "main-heading" enna id il ulla ella styles um 'X-men' lum varan, --> line no:20 il ullath
+li.removeAttribute('id'); // "setAttribute" ulla ee effect remove cheyyan
 
